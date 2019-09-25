@@ -1,10 +1,34 @@
+@font-face {
+    font-family: "ostrich_reg";
+    src: url("fonts/ostrich_regular/ostrichsansinline-regular.woff") format("woff"),
+url("fonts/ostrich_regular/ostrichsansinline-regular.svg#filename") format("svg");
+}
 
 @font-face {
-    font-family:header;
-    src:url("Bebas-Regular.otf");
-    font-weight:200;
- }
- body{
+    font-family: "ostrich_bold";
+    src: url("fonts/ostrich_bold/ostrich-sans-bold.woff") format("woff"),
+url("fonts/ostrich_bold/ostrich-sans-bold.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "ostrich_thick";
+    src: url("fonts/ostrich_thick/ostrich-sans-black.woff") format("woff"),
+url("fonts/ostrich_thick/ostrich-sans-black.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "jonathanharris";
+    src: url("fonts/jonathanharris/true_lies-webfont.woff") format("woff"),
+url("fonts/jonathanharris/true_lies-webfont.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "ostrich_rounded";
+    src: url("fonts/ostrich_medium_rounded/ostrichsansrounded-medium.woff") format("woff"),
+url("fonts/ostrich_medium_rounded/ostrichsansrounded-medium.svg") format("svg");
+}
+
+body{
     margin: 0;
     padding: 0;
 }
@@ -20,12 +44,14 @@
 }
 .menu ul{
     display: inline-flex;
-    margin: 50px;
+    margin: 20px;
     background: transparent;
 }
 .menu ul li{
+    font-family: "ostrich_rounded";
+    font-size: 25px;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 30px;
     color: #b2b1b1;
     cursor: pointer;
     background: transparent;
@@ -35,14 +61,14 @@
     background: transparent;
 }
 .signup-btn{
-  top: 40px;
-  right: 80px;
+  top: 20px;
+  right: 40px;
   position: absolute;
   text-decoration: none;
   color: #fff;
   border: 2px solid transparent;
   border-radius: 20px;
-  background-image: linear-gradient(#1e272e, #1e272e),radial-gradient(circle at top left,#fd00da,#19d7f8);
+  background-image: linear-gradient(#1e272e, #1e272e),radial-gradient(circle at top left,#e7ef32,#19d7f8);
   background-origin: border-box;
   background-clip: content-box,border-box;
 }
@@ -53,6 +79,7 @@
 }
 .signup-text{
     background: transparent;
+    font-family: ostrich_thick;
 }
 .banner{
     width: 80%;
@@ -67,21 +94,26 @@
     width: 50%;
     float: left;
 }
-.app-text  h1{
-    font-size: 70px;
+.app-text h1{
+    font-family: "jonathanharris";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 160px;
     width: 640px;
     position: relative;
-    margin-left: 40px;
+    margin-left: 130px;
+    margin-top: 45px;
     color: #efefef;
     background: transparent;
     text-shadow: 4px 4px 10px #42455a;
 }
 .app-text p{
+    font-family: "ostrich_reg";
     width: 650px;
-    font-size: 15px;
-    margin: 30px 0 30px 40px;
-    line-height: 25px;
-    color: #919191;
+    font-size: 45px;
+    margin: 30px 0 30px 60px;
+    line-height: 37px;
+    color: #a1a1a1;
 }
 .app-picture{
     width: 50%;
@@ -92,6 +124,7 @@
     width: 100%;
     float: right;
     background: transparent;
+    resize: inherit;
 }
 .cloudcontainer{
     position: absolute;
@@ -122,10 +155,10 @@
 @keyframes animate{
     0%
     {
-        background-position: 5440px;
+        background-position: 100px;
     }
     100%
     {
-        background-position: 100px;
+        background-position: 5440px;
     }
 }
