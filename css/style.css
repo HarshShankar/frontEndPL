@@ -1,10 +1,27 @@
+@font-face {
+    font-family: "ostrich_reg";
+    src: url("fonts/ostrich_regular/ostrichsansinline-regular.woff") format("woff"),
+url("fonts/ostrich_regular/ostrichsansinline-regular.svg#filename") format("svg");
+}
 
 @font-face {
-    font-family:header;
-    src:url("Bebas-Regular.otf");
-    font-weight:200;
- }
- body{
+    font-family: "ostrich_bold";
+    src: url("fonts/ostrich_bold/ostrich-sans-bold.woff") format("woff"),
+url("fonts/ostrich_bold/ostrich-sans-bold.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "ostrich_thick";
+    src: url("fonts/ostrich_thick/ostrich-sans-black.woff") format("woff"),
+url("fonts/ostrich_thick/ostrich-sans-black.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "jonathanharris";
+    src: url("fonts/jonathanharris/true_lies-webfont.woff") format("woff"),
+url("fonts/jonathanharris/true_lies-webfont.svg#filename") format("svg");
+}
+body{
     margin: 0;
     padding: 0;
 }
@@ -30,6 +47,7 @@
     cursor: pointer;
     background: transparent;
 }
+
 .active{
     color: #fec325 !important;
     background: transparent;
@@ -68,7 +86,10 @@
     float: left;
 }
 .app-text  h1{
-    font-size: 70px;
+    font-family: "jonathanharris";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
     width: 640px;
     position: relative;
     margin-left: 40px;
@@ -77,10 +98,11 @@
     text-shadow: 4px 4px 10px #42455a;
 }
 .app-text p{
+    font-family: "ostrich_reg";
     width: 650px;
-    font-size: 15px;
+    font-size: 40px;
     margin: 30px 0 30px 40px;
-    line-height: 25px;
+    line-height: 30px;
     color: #919191;
 }
 .app-picture{
