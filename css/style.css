@@ -167,9 +167,9 @@ body{
     }
 }
 
-.foot{
+.btn{
     position: fixed;
-    top:91%;
+    /*top:91%;*/
     left:36.5%;
     transform:translateY(0%);
     text-align:center;
@@ -177,6 +177,9 @@ body{
     width:100%;
     /*-ms-ime-align:center*/
 }
+
+
+
 .btn{
     display:inline-block;
     width:38px;
@@ -190,14 +193,30 @@ body{
     position:relative;
     box-shadow: 1px 1px #42455a;
 }
-.btn img{
-    /*top: 50%;
-    align: content;*/
-    line-height:38px;
-    font-size:16px;
-    transition:0.2s linear;
+
+.btn {
+    position: relative;
+   /*margin-top: 9px;*/
+    top:34px;
+    left:500px;
+    margin-left: 10;
+    margin-right: -10;
+    
+    
 }
-.btn:hover img{
+.btn .foot-head{
+
+    position: fixed;
+    top:20%;
+    left:23%;
+    text-align:center;
+}
+.btn:hover .foot-cap{
+    position: relative;
+    margin-top: 9px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     transform:scale(1.2);
     color:#000000;
 }
@@ -213,10 +232,12 @@ body{
 }
 
 .btn:hover::before{
+    
     animation: aaa 0.7s 1;
     top: -10%;
     left: -10%;
 }
+
 @keyframes aaa{
     0%
     {
