@@ -29,12 +29,12 @@ body{
     z-index: -1;
 }
 .bg{
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(3px);
-    opacity: 0.4;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(0px);
+    opacity: 0.7;
     position: fixed;
     top: 0;
     left: 0;
@@ -77,24 +77,24 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #d6d3d3;
-    border: 1px;
+    border: 1.2px;
     border-style:solid;
-    border-width:thin;
-    border-color: #ffffff1b;
-    border-radius:25px;
-    background: #00000040;
+
+    border-color: #fec325cc;
+    border-radius:20px;
+    background: #00000090;
     /*box-shadow: 0px 0px 50px 5px #d6d3d318;*/
     animation: breathe 3s ease-in-out infinite;
 }
 @keyframes breathe{
     0%{
-        box-shadow: 0px 0px 20px 5px #d6d3d32c;
+        box-shadow: 0px 0px 20px 5px #fec325cf;
     }
     50%{
         box-shadow: 0px 0px 30px 10px #d6d3d346;
     }
     100%{
-        box-shadow: 0px 0px 20px 5px #d6d3d32d;
+        box-shadow: 0px 0px 20px 5px #fec325cf;
     }
 }
 .container h1{
@@ -132,7 +132,7 @@ body{
     font-family: "Montserrat", sans-serif;
     width: 75%;
     text-decoration: none;
-    color: #ffffff28;
+    color: #a6a6a4;
     text-align: right;
     margin: 0px auto;
     font-size: 10px;
@@ -144,17 +144,22 @@ body{
 .loginbtn{
     width: 120px;
     height: 30px;
-    border-radius: 18px;
+    border-radius: 1px;
     margin: 20px auto;
-    background: #f0932b63;
+    background:#333330;
+    border: 1.3px;
+    border-style:solid;
+
+    border-color: #fec325;
+    border-radius:20px;
     font-family: "ostrich_thick";
     font-size: 16px;
-    border: none;
     color: white;
     cursor: pointer;
 }
 .loginbtn:hover{
-    background: #68401381;
+    background: #fec325;
+    color:black;
 
 }
 .b1{
@@ -162,7 +167,7 @@ body{
     font-family: "ostrich_thick";
     width: 130px;
     text-decoration: none;
-    color: #fec3256b;
+    color: #fec325;
     text-align: center;
     margin: 0px auto;
     font-size: 20px;
