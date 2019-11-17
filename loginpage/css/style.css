@@ -136,6 +136,7 @@ body{
     text-align: right;
     margin: 0px auto;
     font-size: 10px;
+    transition: 0.2s;
 }
 .forgot:hover{
     text-decoration:underline;
