@@ -146,7 +146,7 @@ body{
     height: 30px;
     border-radius: 1px;
     margin: 20px auto;
-    background:#333330;
+    background:#3333307a;
     border: 1.3px;
     border-style:solid;
 
@@ -156,6 +156,7 @@ body{
     font-size: 16px;
     color: white;
     cursor: pointer;
+    transition: 0.25s;
 }
 .loginbtn:hover{
     background: #fec325;
@@ -167,7 +168,7 @@ body{
     font-family: "ostrich_thick";
     width: 130px;
     text-decoration: none;
-    color: #fec325;
+    color: #fec3257a;
     text-align: center;
     margin: 0px auto;
     font-size: 20px;
