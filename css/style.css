@@ -178,8 +178,11 @@ body{
     /*-ms-ime-align:center*/
 }
 
-
-
+footer{
+    position: fixed;
+    bottom: 35px;
+    right: 520px;
+}
 .btn{
     display:inline-block;
     width:38px;
