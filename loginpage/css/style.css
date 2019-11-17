@@ -62,10 +62,18 @@ body{
     color: #b2b1b1;
     cursor: pointer;
     background: transparent;
+    transition: 0.2s;
+}
+.menu ul li:hover{
+    color: #dddddd;
+    transform: scale(1.1) rotate(-3deg);
 }
 .active{
     color: #fec325 !important;
     background: transparent;
+}
+.no_und{
+    text-decoration: none;
 }
 .container{
     width: 33%;
