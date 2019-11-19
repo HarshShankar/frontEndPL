@@ -135,22 +135,7 @@ body{
     height: 40px;
     color: white;
 }
-.forgot{
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    width: 75%;
-    text-decoration: none;
-    color: #a6a6a4;
-    text-align: right;
-    margin: 0px auto;
-    font-size: 10px;
-    transition: 0.2s;
-}
-.forgot:hover{
-    text-decoration:underline;
-}
-
-.loginbtn{
+.signupbtn{
     width: 120px;
     height: 30px;
     border-radius: 1px;
@@ -167,7 +152,7 @@ body{
     cursor: pointer;
     transition: 0.25s;
 }
-.loginbtn:hover{
+.signupbtn:hover{
     background: #fec325;
     color:black;
 
