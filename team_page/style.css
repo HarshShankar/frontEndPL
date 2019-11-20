@@ -47,6 +47,7 @@ h1{
     letter-spacing: 0.3em;
     font-weight: 600;
 }
+/*
 h1 span{
     display: inline-block;
     animation: key 1s linear infinite;
@@ -60,6 +61,7 @@ h1 span:nth-child(2){
 h1 span:nth-child(3){
     animation-delay: .5s;
 }
+
 @keyframes key{
     0%,100%
     {
@@ -81,6 +83,7 @@ h1 span:nth-child(3){
         text-shadow:  none;
     }
 }
+*/
 .container{
 	max-width:1140px;
     margin: auto;
@@ -153,7 +156,7 @@ h1 span:nth-child(3){
 	text-align: center;
 	padding:0px 20px;
 }
-section{
+/*section{
     animation: animate 10s linear infinite;
     text-shadow: 0 0 10px rgba(255,255,255,1);
                  0 0 20px rgba(255,255,255,1);
@@ -182,7 +185,7 @@ section{
     }
 }
 
-
+*/
 
 
 
