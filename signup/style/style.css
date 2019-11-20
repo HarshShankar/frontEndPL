@@ -77,7 +77,6 @@ body{
 }
 .container{
     width: 20%;
-    height: 65%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,7 +138,7 @@ body{
     width: 120px;
     height: 30px;
     border-radius: 1px;
-    margin: 20px auto;
+    margin: 10px auto 20px;
     background:#3333307a;
     border: 1.3px;
     border-style:solid;
@@ -164,9 +163,9 @@ body{
     text-decoration: none;
     color: #fec3257a;
     text-align: center;
-    margin: 0px auto;
+    margin: 0px auto 15px;
     font-size: 20px;
-    transition: 0.3s;   
+    transition: 0.3s;
 }
 .b1:hover{
     color: #fec325;

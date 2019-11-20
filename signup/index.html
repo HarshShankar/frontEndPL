@@ -4,6 +4,8 @@
     <title>Sign-Up</title>
     <link rel='stylesheet' type='text/css' href='style/style.css'>
     <link rel = "icon" href ="style/logo-title.png" type = "image/x-icon">
+    <script src="scripts/validate.js">
+    </script>
 </head>
 <body>
     <div class="bgcontainer">
@@ -22,18 +24,24 @@
     </div>
     <div class="container">
         <h1 draggable="true">Sign Up</h1>
-        <form action="index.html" method="post">
+        <form name="forms" action="scripts/index.php" method="post" onsubmit = "return validate();">
             <div class="tbox">
-                <input type="text" placeholder="First Name" value="">
+                <input name="name" type="text" placeholder="First Name">
             </div>
             <div class="tbox">
-                <input type="text" placeholder="Last Name" value="">
+                <input name="lastname" type="text" placeholder="Last Name">
             </div>
             <div class="tbox">
-                <input type="email" placeholder="Email" value="">
+                <input name="email" type="email" placeholder="Email">
             </div>
             <div class="tbox">
-                <input type="password" placeholder="Password" value="">
+                <input name="phone" type="text" placeholder="Phone">
+            </div>
+            <div class="tbox">
+                <input name="password" type="password" placeholder="Password">
+            </div>
+            <div class="tbox">
+                <input name="repassword" type="password" placeholder="Re-enter Password">
             </div>
             <input class="signupbtn" type="submit" name="" value="Sign Up">
 
