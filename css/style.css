@@ -124,10 +124,19 @@ body{
     background: transparent;
     text-shadow: 4px 4px 10px #42455a;
 }
+
 .app-text p{
     font-family: "ostrich_reg";
     width: 650px;
     font-size: 45px;
+    margin: 30px 0 30px 70px;
+    line-height: 37px;
+    color: #a1a1a1;
+}
+.app-text span{
+    font-family: "ostrich_rounded";
+    width: 650px;
+    font-size: 20px;
     margin: 30px 0 30px 70px;
     line-height: 37px;
     color: #a1a1a1;
