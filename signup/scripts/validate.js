@@ -37,6 +37,12 @@ function validate(){
         password.focus(); 
         return false; 
     }
+    if(password.value.length<8)
+    {
+        window.alert("Password is small(Minimum characters:8)"); 
+        password.focus(); 
+        return false; 
+    }
     if (repassword.value != password.value)
     { 
         window.alert("Passwords don't match!"); 
