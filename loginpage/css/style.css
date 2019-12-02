@@ -77,7 +77,6 @@ body{
 }
 .container{
     width: 20%;
-    height: 47%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -180,6 +179,7 @@ body{
     color: #fec3257a;
     text-align: center;
     margin: 0px auto;
+    padding-bottom: 10px;
     font-size: 20px;
     transition: 0.3s;   
 }

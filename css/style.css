@@ -27,7 +27,20 @@ url("fonts/jonathanharris/true_lies-webfont.svg#filename") format("svg");
     src: url("fonts/ostrich_medium_rounded/ostrichsansrounded-medium.woff") format("woff"),
 url("fonts/ostrich_medium_rounded/ostrichsansrounded-medium.svg") format("svg");
 }
-
+::-webkit-scrollbar{
+    width:12px;
+    background:transparent;
+    background-color:#111;
+    
+}
+::-webkit-scrollbar-thumb{
+    border-radius:12px;
+    background: #42455a;
+}
+::-webkit-scrollbar-thumb:hover{
+    width:15px;
+    background: #fec325aa;
+}
 body{
     margin: 0;
     padding: 0;
@@ -42,6 +55,7 @@ body{
     height: 100%;
     background: transparent;
 }
+
 .menu ul{
     display: inline-flex;
     margin: 20px;
