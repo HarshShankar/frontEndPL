@@ -1,4 +1,4 @@
-function validate() {
+function validate(){
     var name = document.forms["name"]; 
     var lastname = document.forms["lastname"];  
     var email = document.forms["email"];    
@@ -34,6 +34,18 @@ function validate() {
     if (password.value == "")
     { 
         window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    }
+    if(password.value.length<8)
+    {
+        window.alert("Password is small(Minimum characters:8)"); 
+        password.focus(); 
+        return false; 
+    }
+	if(password.value.length<8)
+    {
+        window.alert("Password is small(Minimum characters:8)"); 
         password.focus(); 
         return false; 
     }
