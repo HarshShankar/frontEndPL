@@ -4,7 +4,8 @@
         <link rel="stylesheet" href="css/style.css">
         <title>LOGIN</title>
         <link rel = "icon" href ="css/logo-title.png" type = "image/x-icon">
-        <script rel="script" href="script/validation.js"></script>
+        <script src="scripts/validation.js">
+    </script>
     </head>
     <body>
         <div class="bgcontainer">
@@ -23,13 +24,13 @@
         </div>
         <div class="container">
             <h1 draggable="true">Log In</h1>
-            <form action="index.html" method="post">
+            <form name="forms" action="../index.html" method="post" onsubmit = "return validation();">
                 <div class="tbox">
-                    <input type="text" placeholder="Username" value="">
+                    <input type="email" placeholder="Email" value="" name="email">
                 </div>
                    
                 <div class="tbox">
-                    <input type="password" placeholder="Password" value="">
+                    <input type="password" placeholder="Password" value="" name="password">
                 </div>
                 <div>
                     <span>
