@@ -30,7 +30,20 @@ function validate(){
         phone.focus(); 
         return false; 
     } 
-
+    {
+        var isAN = isNaN(phone.value);
+        if(isAN){
+            window.alert("Not a valid Phone NUmber!"); 
+            phone.focus(); 
+            return false;
+        }
+    }
+    if (phone.value.length != 10)
+    { 
+        window.alert("Phone Number should have 10 numbers!"); 
+        phone.focus(); 
+        return false; 
+    } 
     if (password.value == "")
     { 
         window.alert("Please enter your password"); 

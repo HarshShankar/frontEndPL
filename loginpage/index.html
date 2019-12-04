@@ -4,12 +4,11 @@
         <link rel="stylesheet" href="css/style.css">
         <title>LOGIN</title>
         <link rel = "icon" href ="css/logo-title.png" type = "image/x-icon">
-        <script rel="script" href="script/validation.js"></script>
+        <script src="scripts/validation.js">
+    </script>
     </head>
     <body>
-        <div class="bgcontainer">
-            <div class="bg"></div>
-        </div>
+        <div class="whole">
         <div class="headercontainer">
             <div class="menu">
                 <ul>
@@ -23,17 +22,17 @@
         </div>
         <div class="container">
             <h1 draggable="true">Log In</h1>
-            <form action="index.html" method="post">
+            <form name="forms" action="../index.html" method="post" onsubmit = "return validation();">
                 <div class="tbox">
-                    <input type="text" placeholder="Username" value="">
+                    <input type="email" placeholder="Email" value="" name="email">
                 </div>
                    
                 <div class="tbox">
-                    <input type="password" placeholder="Password" value="">
+                    <input type="password" placeholder="Password" value="" name="password">
                 </div>
                 <div>
                     <span>
-                        <a class="forgot" href="reg">FORGOT PASSWORD?</a>
+                        <a class="forgot" href="../signup/index.html">FORGOT PASSWORD?</a>
                     </span>
                 </div>
                 <input class="loginbtn" type="submit" name="" value="Login">
@@ -41,5 +40,9 @@
             </form>
             <a class="b1" href="../signup/index.html">New Member?</a>
         </div>
+        </div>
+        <div id="particles-js"></div>
+        <script src="scripts/particles.js"></script>
+        <script src="scripts/app.js"></script>
     </body>
 </html>

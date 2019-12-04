@@ -9,6 +9,14 @@ url("fonts/ostrich_medium_rounded/ostrichsansrounded-medium.svg#filename") forma
     src: url("fonts/ostrich_thick/ostrich-sans-black.woff") format("woff"),
 url("fonts/ostrich_thick/ostrich-sans-black.svg#filename") format("svg");
 }
+::-webkit-scrollbar{
+    margin:auto;
+    background-color: #fec345;
+}
+::-webkit-scrollbar-thumb{
+    margin: auto;
+    background-color: #fec325;
+}
 
 body{
     margin: 0%;
@@ -18,36 +26,24 @@ body{
     margin: 0;
     padding: 0;
 }
+#particles-js{
 
-.bgcontainer{
+    background:#fec345 ;
+    background-size:cover;
+    background-position: fixed;
+    height:100%;
+}
+.whole{
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-    background: #000000;
-    z-index: -1;
-}
-.bg{
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(0px);
-    opacity: 0.7;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(oscar_unsplash.jpg);
-    background-size: cover;
 }
 
 .headercontainer{
     width: 100%;
     height: 100%;
-    background: transparent;
 }
 .menu ul{
     display: inline-flex;
@@ -59,17 +55,17 @@ body{
     font-size: 22px;
     list-style: none;
     margin: 0 24px;
-    color: #b2b1b1;
+    color: #000000;
     cursor: pointer;
     background: transparent;
     transition: 0.2s;
 }
 .menu ul li:hover{
-    color: #dddddd;
+    color: #34495e;
     transform: scale(1.1) rotate(-3deg);
 }
 .active{
-    color: #fec325 !important;
+    color: #4580fe!important;
     background: transparent;
 }
 .no_und{
@@ -87,26 +83,27 @@ body{
     border: 2px;
     border-style:solid;
 
-    border-color: #fec325cc;
+    border-color: #fec345;
     border-radius:20px;
-    background: #00000090;
+    background: #000000;
     /*box-shadow: 0px 0px 50px 5px #d6d3d318;*/
     animation: breathe 3s ease-in-out infinite;
 }
+
 @keyframes breathe{
     0%{
-        box-shadow: 0px 0px 20px 5px #fec325cf;
+        box-shadow: 0px 0px 20px 5px #00000090;
     }
     50%{
-        box-shadow: 0px 0px 30px 10px #d6d3d346;
+        box-shadow: 0px 0px 25px 8px #00000090;
     }
     100%{
-        box-shadow: 0px 0px 20px 5px #fec325cf;
+        box-shadow: 0px 0px 20px 5px #00000090;
     }
 }
 .container h1{
     font-size: 50px;
-    margin-top: 20%;
+    margin-top: 13%;
     margin-bottom: 30px;
     text-shadow: 2px 2px #7977747d;
 }
@@ -179,7 +176,8 @@ body{
     color: #fec3257a;
     text-align: center;
     margin: 0px auto;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 20px;
     transition: 0.3s;   
 }
